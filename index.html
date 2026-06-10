@@ -5,84 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wellington Perez | Portfólio</title>
 
-    <link rel="icon" type="image/png" href="https://ui-avatars.com/api/?name=WP&background=a855f7&color=fff&rounded=true&bold=true" />
+    <meta
+      name="description"
+      content="Portfólio de Wellington Perez, Analista de Integração, Dados e Automação, com projetos em Python, SQL, Databricks, BI e agentes de IA."
+    />
 
-    <!-- Metatags para Redes Sociais (WhatsApp, LinkedIn, etc) -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://ui-avatars.com/api/?name=WP&background=a855f7&color=fff&rounded=true&bold=true"
+    />
+
+    <!-- Metatags para redes sociais -->
     <meta property="og:title" content="Wellington Perez | Portfólio" />
     <meta
       property="og:description"
-      content="Engenheiro de Software e Analista de Integração. Conheça minha trajetória, projetos em IA e automações no iFood."
+      content="Analista de Integração, Dados e Automação. Projetos com Python, SQL, Databricks, BI e agentes de IA aplicados a operações em escala."
     />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Wellington Perez" />
-
-    <!-- URL do seu site (Substitua pelo link real quando publicar) -->
     <meta property="og:url" content="https://wellperez.dev.br/" />
-
-    <!-- Link da imagem de prévia (DEVE SER UM LINK COMPLETO COM HTTPS) -->
-    <meta
-      name="image"
-      property="og:image"
-      content="https://wellperez.dev.br/preview.jpg"
-    />
+    <meta property="og:image" content="https://wellperez.dev.br/preview.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
 
-    <nav class="navbar fade-in">
-      <a href="#" class="nav-logo"> <i class="fa-solid fa-terminal"></i> WP </a>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+    <button
+      class="hamburger"
+      id="hamburger"
+      type="button"
+      aria-label="Abrir menu"
+      aria-controls="nav-menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar fade-in" aria-label="Navegação principal">
+      <a href="#inicio" class="nav-logo" aria-label="Voltar ao início">
+        <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+        <span>WP</span>
+      </a>
+
       <ul class="nav-menu" id="nav-menu">
         <li>
           <a href="#sobre"
-            ><i class="fa-solid fa-user-astronaut fa-fw"></i> Sobre Mim</a
+            ><i class="fa-solid fa-user-astronaut fa-fw" aria-hidden="true"></i>
+            Sobre</a
           >
         </li>
         <li>
           <a href="#projetos"
-            ><i class="fa-solid fa-rocket fa-fw"></i> Projetos</a
+            ><i class="fa-solid fa-rocket fa-fw" aria-hidden="true"></i>
+            Projetos</a
           >
         </li>
         <li>
-          <a href="#ai"><i class="fa-solid fa-robot fa-fw"></i> AI & Agentes</a>
+          <a href="#ai"
+            ><i class="fa-solid fa-robot fa-fw" aria-hidden="true"></i> IA &
+            Agentes</a
+          >
         </li>
         <li>
           <a href="#experiencia"
-            ><i class="fa-solid fa-briefcase fa-fw"></i> Trajetória</a
+            ><i class="fa-solid fa-briefcase fa-fw" aria-hidden="true"></i>
+            Trajetória</a
           >
         </li>
         <li>
           <a href="#formacao"
-            ><i class="fa-solid fa-graduation-cap fa-fw"></i> Formação</a
+            ><i class="fa-solid fa-graduation-cap fa-fw" aria-hidden="true"></i>
+            Formação</a
           >
         </li>
         <li>
           <a href="#conteudo"
-            ><i class="fa-solid fa-meteor fa-fw"></i> Criação de Conteúdo</a
+            ><i class="fa-solid fa-meteor fa-fw" aria-hidden="true"></i>
+            Experimentos</a
           >
         </li>
       </ul>
     </nav>
 
-    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
 
-    <header class="hero fade-in">
-      <div class="cosmic-network">
+    <header class="hero fade-in" id="inicio">
+      <div class="cosmic-network" aria-hidden="true">
         <div class="orbit orbit-1"><div class="node"></div></div>
         <div class="orbit orbit-2"><div class="node"></div></div>
         <div class="orbit orbit-3"><div class="node"></div></div>
@@ -90,393 +115,414 @@
       </div>
 
       <div class="hero-content">
+        <p class="eyebrow">Integração · Dados · Automação · IA Aplicada</p>
         <h1>Wellington Perez</h1>
-        <h2>Analista de Integração | Engenheiro de Software</h2>
-        <p>
-          <i class="fa-solid fa-location-dot" style="margin-right: 5px"></i
-          >Catanduva, São Paulo, Brasil
+        <h2>Analista de Integração, Dados e Automação</h2>
+        <p class="hero-description">
+          Transformo problemas operacionais em dashboards, automações Python/SQL
+          e agentes de IA, conectando negócio e engenharia para aumentar
+          confiabilidade, reduzir esforço manual e acelerar decisões.
         </p>
-        <div class="contact-links">
-          <a href="mailto:wellingtonaperez@gmail.com" class="btn"
-            ><i class="fa-solid fa-envelope" style="margin-right: 5px"></i>
-            Email</a
-          >
+
+        <p class="location">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          Catanduva, São Paulo, Brasil
+        </p>
+
+        <div class="contact-links" aria-label="Links de contato">
+          <a href="mailto:wellingtonaperez@gmail.com" class="btn">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            Email
+          </a>
           <a
             href="https://www.linkedin.com/in/wellperez"
             target="_blank"
+            rel="noopener noreferrer"
             class="btn outline"
-            ><i class="fa-brands fa-linkedin" style="margin-right: 5px"></i>
-            LinkedIn</a
           >
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            LinkedIn
+          </a>
+          <a href="#projetos" class="btn ghost">
+            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            Ver projetos
+          </a>
+        </div>
+
+        <div
+          class="impact-strip"
+          aria-label="Indicadores de impacto profissional"
+        >
+          <div class="impact-item">
+            <strong>R$ 840M+</strong>
+            <span>GMV monitorado</span>
+          </div>
+          <div class="impact-item">
+            <strong>76h/mês</strong>
+            <span>economizadas</span>
+          </div>
+          <div class="impact-item">
+            <strong>300+</strong>
+            <span>agendas com parceiros</span>
+          </div>
+          <div class="impact-item">
+            <strong>Top 20%</strong>
+            <span>power user em IA</span>
+          </div>
         </div>
       </div>
     </header>
 
-    <main>
+    <main id="conteudo-principal">
       <section class="about slide-up" id="sobre">
-        <h3>
-          <i
-            class="fa-solid fa-user-astronaut"
-            style="color: var(--primary-color); margin-right: 10px"
-          ></i
-          >Sobre Mim
-        </h3>
-        <p>
-          Com mais de dois anos no iFood como Analista de Integração, contribuo
-          para a consolidação de parceiros no Marketplace e melhoria de
-          processos internos. Meu foco está na análise de dados, criação de
-          dashboards para tomada de decisão e automações com uso de Python e
-          SQL. Tenho forte atuação na gestão de projetos e busco entregar
-          soluções tecnológicas que agreguem valor às operações, unindo minha
-          base sólida em desenvolvimento de software com minha visão analítica.
-        </p>
-
-        <p>
-          Sou movido pelo aprendizado contínuo e sigo em preparação para prestar
-          o vestibular e ingressar na graduação em Matemática, com o objetivo de
-          fortalecer ainda mais meu raciocínio lógico. Além da rotina
-          corporativa, dedico-me a aplicar a tecnologia no dia a dia, como no
-          desenvolvimento Android focado em criar soluções práticas para a
-          comunidade local.
-        </p>
-
-        <p>
-          Sou casado, divido a casa com 7 pets e, longe dos teclados, recarrego
-          as energias em boas pescarias ou desbravando mundos em jogos de
-          plataforma e RPG. Além disso, sou um grande fascinado pelos mistérios
-          da astronomia, exploração espacial e ufologia.
-        </p>
-      </section>
-
-      <section class="skills slide-up">
-        <h3>
-          <i
-            class="fa-solid fa-code"
-            style="color: var(--primary-color); margin-right: 10px"
-          ></i
-          >Competências e Ferramentas
-        </h3>
-        <div class="skills-grid">
-          <span class="skill-tag"
-            ><i class="fa-brands fa-python" style="margin-right: 5px"></i
-            >Python</span
-          >
-          <span class="skill-tag"
-            ><i class="fa-solid fa-database" style="margin-right: 5px"></i
-            >SQL</span
-          >
-          <span class="skill-tag"
-            ><i class="fa-solid fa-cubes" style="margin-right: 5px"></i
-            >Databricks</span
-          >
-          <span class="skill-tag"
-            ><i class="fa-solid fa-server" style="margin-right: 5px"></i>Big
-            Data</span
-          >
-          <span class="skill-tag"
-            ><i class="fa-solid fa-network-wired" style="margin-right: 5px"></i
-            >Machine Learning</span
-          >
-          <span class="skill-tag"
-            ><i class="fa-solid fa-chart-pie" style="margin-right: 5px"></i
-            >Business Intelligence (BI)</span
-          >
-          <span class="skill-tag"
-            ><i class="fa-brands fa-windows" style="margin-right: 5px"></i>C# /
-            .NET Core</span
-          >
-          <span class="skill-tag"
-            ><i class="fa-solid fa-microchip" style="margin-right: 5px"></i
-            >Desenvolvimento de Agentes (AI)</span
-          >
+        <div class="section-heading">
+          <span class="section-kicker">Sobre</span>
+          <h3>
+            <i class="fa-solid fa-user-astronaut" aria-hidden="true"></i>
+            Perfil profissional
+          </h3>
         </div>
-      </section>
 
-      <section class="soft-skills slide-up" id="soft-skills">
-        <h3>
-          <i
-            class="fa-solid fa-brain"
-            style="color: var(--primary-color); margin-right: 10px"
-          ></i
-          >Soft Skills
-        </h3>
-        <div class="project-grid">
-          <div class="project-card" style="padding: 1.5rem">
-            <h4 style="margin-bottom: 0.5rem; color: var(--primary-color)">
-              Visão de Negócio & Resultados
-            </h4>
-            <p style="font-size: 0.9rem">
-              Foco em desenvolver soluções tecnológicas que resolvem dores
-              reais, otimizam tempo operacional e geram impacto financeiro
-              mensurável.
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Sou um profissional de tecnologia com base em engenharia de
+              software e atuação atual em integração, dados e automação no
+              iFood. Meu trabalho combina Python, SQL, Databricks, BI e IA
+              aplicada para resolver gargalos operacionais em escala, criar
+              visibilidade sobre integrações e apoiar decisões de negócio com
+              dados confiáveis.
             </p>
-          </div>
-          <div class="project-card" style="padding: 1.5rem">
-            <h4 style="margin-bottom: 0.5rem; color: var(--primary-color)">
-              Resolução de Problemas Complexos
-            </h4>
-            <p style="font-size: 0.9rem">
-              Capacidade analítica afiada para troubleshooting, investigação de
-              anomalias em ecossistemas de grande escala e identificação de
-              causas raiz.
+            <p>
+              Atuo como ponte entre engenharia e áreas de negócio, traduzindo
+              dores operacionais em soluções técnicas com impacto mensurável.
+              Tenho forte interesse em arquitetura de dados, automação de
+              processos, agentes inteligentes e produtos digitais que resolvem
+              problemas reais.
             </p>
-          </div>
-          <div class="project-card" style="padding: 1.5rem">
-            <h4 style="margin-bottom: 0.5rem; color: var(--primary-color)">
-              Tradução Técnica & Comunicação
-            </h4>
-            <p style="font-size: 0.9rem">
-              Habilidade para atuar como ponte entre a engenharia e as áreas de
-              negócio, traduzindo necessidades operacionais em arquitetura de
-              dados e sistemas.
-            </p>
-          </div>
-          <div class="project-card" style="padding: 1.5rem">
-            <h4 style="margin-bottom: 0.5rem; color: var(--primary-color)">
-              Autonomia & Ownership
-            </h4>
-            <p style="font-size: 0.9rem">
-              Iniciativa para mapear deficiências não estruturadas, propor
-              arquiteturas inovadoras e liderar a implementação de ponta a
-              ponta.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="certifications-languages slide-up" id="certificacoes">
-        <h3>
-          <i
-            class="fa-solid fa-certificate"
-            style="color: var(--primary-color); margin-right: 10px"
-          ></i
-          >Certificações e Idiomas
-        </h3>
-        <div class="project-grid">
-          <div class="project-card">
-            <h4 style="margin-bottom: 1rem; color: var(--primary-color)">
-              <i class="fa-solid fa-shield-halved" style="margin-right: 8px"></i
-              >Certificações
-            </h4>
-            <ul class="project-highlights" style="margin-top: 0">
-              <li>
-                <strong>CSCU:</strong> Certified Secure Computer User CSCU |
-                EC-Council
-              </li>
-              <li>
-                <strong>NDE:</strong> Network Defense Essentials NDE |
-                EC-Council
-              </li>
-              <li>
-                <strong>Dados:</strong> Resolução de Problemas e Tomada de
-                Descisão com Dados | Ventus Learning
-              </li>
-              <li>
-                <strong>Infraestrutura:</strong> Fundamentos em Redes | IBSEC -
-                Instituto Brasileiro de Cibersegurança
-              </li>
-            </ul>
           </div>
 
-          <div class="project-card">
-            <h4 style="margin-bottom: 1rem; color: var(--primary-color)">
-              <i class="fa-solid fa-language" style="margin-right: 8px"></i
-              >Idiomas
-            </h4>
-            <ul class="project-highlights" style="margin-top: 0">
-              <li>
-                <strong>Inglês:</strong> Fluente (Não Nativo) – Comunicação
-                avançada para ambientes corporativos e documentação técnica.
-              </li>
-              <li><strong>Português:</strong> Nativo</li>
-            </ul>
-          </div>
+          <aside class="personal-card" aria-label="Resumo pessoal">
+            <h4>Além da rotina corporativa</h4>
+            <p>
+              Casado, tutor de 7 pets e entusiasta de pescaria, jogos de
+              plataforma/RPG, astronomia, exploração espacial e ufologia.
+            </p>
+          </aside>
         </div>
       </section>
 
       <section class="projects slide-up" id="projetos">
-        <h3>
-          <i
-            class="fa-solid fa-rocket"
-            style="color: var(--primary-color); margin-right: 10px"
-          ></i
-          >Projetos e Impacto no iFood
-        </h3>
+        <div class="section-heading">
+          <span class="section-kicker">Cases</span>
+          <h3>
+            <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+            Projetos e impacto
+          </h3>
+        </div>
 
         <div class="project-grid">
-          <div class="project-card">
-            <h4>Dashboards de Monitoramento e Qualidade (MQI)</h4>
+          <article class="project-card featured-card">
+            <div class="card-header">
+              <h4>MQI — Dashboards de Monitoramento e Qualidade</h4>
+              <span class="project-tag">Dados · BI · Integrações</span>
+            </div>
             <p>
-              Implementação pioneira da cultura de análise de dados no setor de
-              integração de Groceries. O ecossistema de dashboards foi criado
-              para garantir a saúde das integrações e maximizar os resultados
-              dos parceiros.
+              Ecossistema de dashboards criado para ampliar a visibilidade sobre
+              a saúde das integrações de Groceries, apoiar decisões operacionais
+              e fortalecer a cultura de análise de dados.
             </p>
+
+            <div class="case-blocks">
+              <div>
+                <strong>Problema</strong>
+                <span
+                  >Baixa visibilidade sobre falhas, anomalias e comportamento
+                  das integrações em escala.</span
+                >
+              </div>
+              <div>
+                <strong>Solução</strong>
+                <span
+                  >Dashboards com volumetria, status codes, GMV, heatmaps e
+                  análise de anomalias.</span
+                >
+              </div>
+              <div>
+                <strong>Impacto</strong>
+                <span
+                  >Monitoramento de lojas com falhas, resguardando mais de R$
+                  840 milhões em GMV.</span
+                >
+              </div>
+            </div>
+
             <ul class="project-highlights">
               <li>
-                <strong>Monitoramento de GMV:</strong> Rastreamento de lojas com
-                falhas de integração, resguardando um GMV de
-                <strong>R$ 840 Milhões</strong>.
+                Observabilidade de APIs críticas com leitura de status codes
+                2xx, 4xx e 5xx.
               </li>
               <li>
-                <strong>Observabilidade de APIs:</strong> Análise volumétrica e
-                de status codes (2xx, 4xx, 5xx) em endpoints críticos
-                (separação, cancelamento, ingestão de dados), identificando
-                gargalos e falhas de requisição.
+                Mapeamento de rupturas, alterações atípicas em preço, estoque e
+                descrição.
               </li>
               <li>
-                <strong>Heatmaps e Anomalias:</strong> Mapeamento de rupturas
-                para definição de estoque mínimo seguro e auditoria de
-                alterações atípicas em atributos chave (preço, estoque,
-                descrição).
-              </li>
-              <li>
-                <strong>Governança:</strong> Identificação de uso abusivo de
-                parâmetros de alto custo computacional (como o <i>reset</i> de
-                estoque) e mapeamento da adoção de APIs modernas versus legadas.
+                Identificação de uso abusivo de parâmetros de alto custo, como
+                reset de estoque.
               </li>
             </ul>
-          </div>
+          </article>
 
-          <div class="project-card">
-            <h4>iReport - Automação de Documentação</h4>
+          <article class="project-card">
+            <div class="card-header">
+              <h4>iReport — Automação de Documentação</h4>
+              <span class="project-tag">Python · APIs · PDF</span>
+            </div>
             <p>
-              Ferramenta desenvolvida em Python para automatizar a extração e
-              auditoria das configurações iniciais de lojas implantadas. A
-              aplicação consome os endpoints do backoffice, processa os arquivos
-              JSON e gera um relatório em PDF arquivado diretamente no
+              Ferramenta em Python para automatizar extração, auditoria e
+              documentação das configurações iniciais de lojas implantadas.
+            </p>
+
+            <div class="case-blocks compact">
+              <div>
+                <strong>Problema</strong>
+                <span
+                  >Auditoria manual levava cerca de 4 minutos por loja.</span
+                >
+              </div>
+              <div>
+                <strong>Solução</strong>
+                <span
+                  >Consumo de endpoints, processamento de JSON e geração de
+                  relatório PDF.</span
+                >
+              </div>
+              <div>
+                <strong>Impacto</strong>
+                <span
+                  >Redução para 10 segundos por loja e economia superior a 76
+                  horas mensais.</span
+                >
+              </div>
+            </div>
+
+            <p class="stack-line">
+              <strong>Stack:</strong> Python, requests, JSON, pdfkit, Kivy,
               Salesforce.
             </p>
-            <ul class="project-highlights">
-              <li>
-                <strong>Impacto:</strong> Redução do tempo de auditoria de 4
-                minutos para apenas 10 segundos por loja.
-              </li>
-              <li>
-                <strong>Escala:</strong> Em um cenário de 1.200 implantações
-                mensais, a ferramenta gerou uma
-                <strong>economia de mais de 76 horas mensais</strong> de
-                trabalho manual.
-              </li>
-              <li>
-                <strong>Tecnologias Core:</strong>
-                <code>requests</code> (consumo de APIs),
-                <code>json</code> (manipulação de payload) e
-                <code>pdfkit</code> (geração de relatórios).
-              </li>
-              <li>
-                <strong>Apoio:</strong> <code>Kivy</code> (para interface
-                gráfica) e <code>os</code>.
-              </li>
-            </ul>
-          </div>
+          </article>
 
-          <div class="project-card">
-            <h4>Open Links - Validação em Massa</h4>
+          <article class="project-card">
+            <div class="card-header">
+              <h4>Open Links — Validação em Massa</h4>
+              <span class="project-tag">Python · Tkinter · Operações</span>
+            </div>
             <p>
-              Aplicação desktop em Python com interface gráfica (Tkinter)
-              desenvolvida para acelerar o processo de troubleshooting e
-              monitoramento ativo do ecossistema.
+              Aplicação desktop criada para acelerar troubleshooting e
+              validações operacionais em múltiplas plataformas internas.
+            </p>
+
+            <div class="case-blocks compact">
+              <div>
+                <strong>Problema</strong>
+                <span
+                  >Validação manual repetitiva de lojas, pausas, rollout e
+                  plataformas internas.</span
+                >
+              </div>
+              <div>
+                <strong>Solução</strong>
+                <span
+                  >Interface para injetar múltiplos IDs e abrir validações em
+                  lote.</span
+                >
+              </div>
+              <div>
+                <strong>Impacto</strong>
+                <span
+                  >Redução do esforço de análise e resposta mais rápida para a
+                  equipe.</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-header">
+              <h4>Cultura IA-First e Engajamento Corporativo</h4>
+              <span class="project-tag">IA · Produtividade · Disseminação</span>
+            </div>
+            <p>
+              Reconhecimento interno pelo uso consistente de IA aplicada à
+              resolução de problemas, análise de dados, automação e suporte ao
+              desenvolvimento.
             </p>
             <ul class="project-highlights">
               <li>
-                <strong>Funcionalidade:</strong> Permite a injeção de múltiplos
-                IDs de lojas e direcionamento em lote para diversas plataformas
-                internas de validação (Metabase, Extranet, BKO Área de Entrega,
-                Shop Metrics).
+                Classificação entre os Top 20% power users de IA no iFood.
               </li>
               <li>
-                <strong>Resultado:</strong> Otimização extrema no tempo de
-                resposta da equipe para validar funcionamentos, verificar pausas
-                e analisar o <i>rollout</i> de integrações.
+                Quase 1.000 interações anuais com LLMs e assistentes
+                corporativos.
+              </li>
+              <li>
+                Participação em 57% dos workshops internos de IA no último ano.
               </li>
             </ul>
-          </div>
+          </article>
 
-          <!-- Projeto Cultura de IA -->
-          <div class="project-card">
-            <h4>Cultura AI-First e Engajamento Corporativo</h4>
+          <article class="project-card">
+            <div class="card-header">
+              <h4>Classificação de Tumores de Mama com Regressão Logística</h4>
+              <span class="project-tag"
+                >Python · Scikit-learn · Machine Learning</span
+              >
+            </div>
+
             <p>
-              Reconhecimento interno pelo alto grau de adoção e aplicação
-              prática de Inteligência Artificial no dia a dia corporativo,
-              consolidando a mentalidade "AI first" para automatizar rotinas e
-              otimizar processos.
+              Projeto acadêmico de Machine Learning aplicado à saúde,
+              desenvolvido para classificar tumores de mama como benignos ou
+              malignos a partir do dataset Breast Cancer Wisconsin Diagnostic.
+            </p>
+
+            <div class="case-blocks compact">
+              <div>
+                <strong>Problema</strong>
+                <span>
+                  Construir um modelo interpretável para apoiar a classificação
+                  binária de tumores mamários com base em características
+                  extraídas de imagens digitalizadas.
+                </span>
+              </div>
+
+              <div>
+                <strong>Solução</strong>
+                <span>
+                  Regressão Logística em Python, com exploração dos dados,
+                  pré-processamento, divisão treino/teste e avaliação por
+                  métricas de classificação.
+                </span>
+              </div>
+
+              <div>
+                <strong>Impacto</strong>
+                <span>
+                  Modelo com 96% de acurácia geral, 98% de precisão e 93% de
+                  recall para a classe maligna.
+                </span>
+              </div>
+            </div>
+
+            <ul class="project-highlights">
+              <li>Dataset com 357 casos benignos e 212 malignos.</li>
+              <li>
+                Uso de 30 características dos núcleos celulares, incluindo raio,
+                textura, perímetro, área, concavidade, simetria e dimensão
+                fractal.
+              </li>
+              <li>
+                Pré-processamento com mapeamento da variável alvo, exclusão de
+                colunas identificadoras e imputação por média.
+              </li>
+              <li>
+                Avaliação com matriz de confusão, acurácia, precisão, recall e
+                F1-score.
+              </li>
+              <li>
+                F1-score de 95% para a classe maligna e 97% para a classe
+                benigna.
+              </li>
+            </ul>
+
+            <p class="project-stack">
+              <strong>Stack:</strong> Python, Pandas, NumPy, Scikit-learn,
+              Seaborn, Matplotlib, Regressão Logística, Machine Learning e
+              Análise Exploratória de Dados.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="card-header">
+              <h4>Meu Pet Care — Projeto em Desenvolvimento</h4>
+              <span class="project-tag">Flutter · Firebase · Mobile</span>
+            </div>
+            <p>
+              Aplicativo mobile para organização de pets, cuidados, rotinas e
+              registros importantes, com foco em resolver uma necessidade
+              prática da comunidade local e de tutores multi-pets.
             </p>
             <ul class="project-highlights">
               <li>
-                <strong>Top 20% Power Users:</strong> Classificado oficialmente
-                na retrospectiva de IA entre os 20% dos colaboradores
-                (FoodLovers) que mais utilizam tecnologias de Inteligência
-                Artificial no iFood.
+                Arquitetura pensada para evolução gradual e manutenção simples.
               </li>
               <li>
-                <strong>Integração Produtiva:</strong> Registro de quase 1.000
-                interações anuais com LLMs e assistentes corporativos (Toqan e
-                Gemini) para resolução de problemas, análise de dados e suporte
-                ao código.
+                Uso de Firebase para persistência e sincronização de dados.
               </li>
               <li>
-                <strong>Desenvolvimento Prático:</strong> Criação e sustentação
-                de agentes inteligentes ativos no ecossistema interno (como o
-                assistente SAGE).
-              </li>
-              <li>
-                <strong>Educação e Disseminação:</strong> Forte participação no
-                ecossistema de aprendizado contínuo, marcando presença em 57%
-                dos workshops internos de IA da companhia no último ano.
+                Projeto com potencial para se tornar produto público no
+                portfólio.
               </li>
             </ul>
-          </div>
+          </article>
         </div>
       </section>
 
       <section class="ai-agents slide-up" id="ai">
-        <h3>
-          <i
-            class="fa-solid fa-robot"
-            style="color: var(--primary-color); margin-right: 10px"
-          ></i
-          >AI & Agentes Inteligentes
-        </h3>
-        <div class="project-card">
-          <h4>SAGE — Smart Analyst for Groceries Enhancement</h4>
+        <div class="section-heading">
+          <span class="section-kicker">IA aplicada</span>
+          <h3>
+            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+            Agentes inteligentes
+          </h3>
+        </div>
+
+        <article class="project-card sage-card">
+          <div class="card-header">
+            <h4>SAGE — Smart Analyst for Groceries Enhancement</h4>
+            <span class="project-tag">Slack · Databricks · SQL · IA</span>
+          </div>
+
           <p>
-            O SAGE é um assistente inteligente de dados desenvolvido
-            especialmente para o ecossistema iFood, com foco em redes e grupos
-            de supermercados. Integrado nativamente ao <strong>Slack</strong>,
-            ele atua como um analista em tempo real, transformando perguntas em
-            linguagem natural em análises precisas, sem exigir conhecimento
-            prévio em SQL das equipes de negócio.
+            O SAGE é um assistente inteligente de dados desenvolvido para o
+            ecossistema iFood, com foco em redes e grupos de supermercados.
+            Integrado ao Slack, ele transforma perguntas em linguagem natural em
+            análises estruturadas, sem exigir conhecimento prévio em SQL das
+            áreas de negócio.
           </p>
 
-          <ul class="project-highlights">
+          <div
+            class="architecture-flow"
+            aria-label="Fluxo de funcionamento do SAGE"
+          >
+            <span>Slack</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <span>Interpretação</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <span>SQL</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <span>Databricks</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <span>Resposta validada</span>
+          </div>
+
+          <ul class="project-highlights two-columns">
+            <li>Tradução da intenção do usuário para queries SQL complexas.</li>
+            <li>Monitoramento dos estados PENDING, RUNNING e COMPLETED.</li>
+            <li>Análise de catálogo, ingestão, bloqueios, preços e estoque.</li>
             <li>
-              <strong>Automação de Consultas (Databricks):</strong> Traduz a
-              intenção do usuário para queries SQL complexas, executa no
-              ambiente Databricks de forma segura e monitora proativamente os
-              estados de processamento (PENDING, RUNNING e COMPLETED).
+              Filtros por grupo, rede, loja e janelas de tempo específicas.
             </li>
+            <li>Respostas estruturadas com médias, detalhes e alertas.</li>
             <li>
-              <strong>Análise de Catálogo e Ingestão:</strong> Identifica
-              anomalias sistêmicas, bloqueios de itens, variações de preço
-              (DE-POR e Atacarejo), avaliação por curva de relevância e
-              histórico de atualização de atributos.
-            </li>
-            <li>
-              <strong>Filtros Dinâmicos:</strong> Capacidade de isolar análises
-              por grupo comercial, rede, identificador de loja (FRN_ID) e
-              janelas de tempo específicas.
-            </li>
-            <li>
-              <strong>Governança e Integridade:</strong> Desenvolvido com foco
-              em zero alucinação. O agente entrega resultados estruturados no
-              Slack (com médias, detalhamentos e alertas) e comunica de forma
-              transparente quando há ausência de dados, garantindo que valores
-              nunca sejam estimados ou inventados.
+              Governança com foco em zero alucinação e transparência na ausência
+              de dados.
             </li>
           </ul>
 
-          <div class="chat-snippet">
+          <div
+            class="chat-snippet"
+            aria-label="Exemplos de perguntas ao agente SAGE"
+          >
             <span
               >💬 "Quais produtos do Grupo XYZ estão sem estoque hoje?"</span
             >
@@ -485,221 +531,340 @@
             >
             <span>💬 "Existem itens bloqueados no catálogo do Grupo XYZ?"</span>
           </div>
+        </article>
+      </section>
+
+      <section class="skills slide-up" id="competencias">
+        <div class="section-heading">
+          <span class="section-kicker">Stack</span>
+          <h3>
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            Competências e ferramentas
+          </h3>
+        </div>
+
+        <div class="skills-grid">
+          <span class="skill-tag"
+            ><i class="fa-brands fa-python" aria-hidden="true"></i> Python</span
+          >
+          <span class="skill-tag"
+            ><i class="fa-solid fa-database" aria-hidden="true"></i> SQL</span
+          >
+          <span class="skill-tag"
+            ><i class="fa-solid fa-cubes" aria-hidden="true"></i>
+            Databricks</span
+          >
+          <span class="skill-tag"
+            ><i class="fa-solid fa-server" aria-hidden="true"></i> Big
+            Data</span
+          >
+          <span class="skill-tag"
+            ><i class="fa-solid fa-chart-pie" aria-hidden="true"></i> Business
+            Intelligence</span
+          >
+          <span class="skill-tag"
+            ><i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+            Machine Learning</span
+          >
+          <span class="skill-tag"
+            ><i class="fa-brands fa-windows" aria-hidden="true"></i> C# / .NET
+            Core</span
+          >
+          <span class="skill-tag"
+            ><i class="fa-solid fa-microchip" aria-hidden="true"></i> Agentes de
+            IA</span
+          >
+          <span class="skill-tag"
+            ><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+            Flutter</span
+          >
+          <span class="skill-tag"
+            ><i class="fa-solid fa-fire" aria-hidden="true"></i> Firebase</span
+          >
+        </div>
+      </section>
+
+      <section class="soft-skills slide-up" id="soft-skills">
+        <div class="section-heading">
+          <span class="section-kicker">Comportamental</span>
+          <h3>
+            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+            Soft skills
+          </h3>
+        </div>
+
+        <div class="project-grid small-grid">
+          <article class="project-card soft-card">
+            <h4>Visão de Negócio & Resultados</h4>
+            <p>
+              Soluções orientadas a dores reais, eficiência operacional e
+              impacto financeiro mensurável.
+            </p>
+          </article>
+          <article class="project-card soft-card">
+            <h4>Resolução de Problemas Complexos</h4>
+            <p>
+              Investigação de anomalias, troubleshooting em escala e
+              identificação de causas raiz.
+            </p>
+          </article>
+          <article class="project-card soft-card">
+            <h4>Tradução Técnica & Comunicação</h4>
+            <p>
+              Ponte entre engenharia e negócio, convertendo necessidades
+              operacionais em soluções técnicas.
+            </p>
+          </article>
+          <article class="project-card soft-card">
+            <h4>Autonomia & Ownership</h4>
+            <p>
+              Capacidade de mapear gaps, propor arquiteturas e conduzir
+              implementações de ponta a ponta.
+            </p>
+          </article>
         </div>
       </section>
 
       <section class="experience slide-up" id="experiencia">
-        <h3>
-          <i
-            class="fa-solid fa-briefcase"
-            style="color: var(--primary-color); margin-right: 10px"
-          ></i
-          >Trajetória Profissional
-        </h3>
+        <div class="section-heading">
+          <span class="section-kicker">Carreira</span>
+          <h3>
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+            Trajetória profissional
+          </h3>
+        </div>
+
         <div class="timeline">
-          <div class="timeline-item">
+          <article class="timeline-item">
             <h4>Analista de Integração</h4>
             <h5>iFood | Ago 2023 - Presente</h5>
             <p>
-              Implantação e sustentação de parceiros no Marketplace, análise de
-              dados via Databricks e automação de processos internos.
-              Monitoramento de integrações, desenvolvimento de dashboards e
-              criação de ferramentas para otimização de operações. Foco em
-              garantir a saúde das integrações e maximizar os resultados dos
-              parceiros, atuando como ponte entre a engenharia e as áreas de
-              negócio para traduzir necessidades operacionais em soluções
-              tecnológicas. Projeto de migração dos parceiros dos canais legados
-              para as APIs modernas, garantindo a escalabilidade e eficiência
-              das integrações. Desenvolvimento de ferramentas de automação para
-              auditoria e monitoramento, resultando em uma economia
-              significativa de tempo e recursos para a equipe. Implementação de
-              dashboards de monitoramento de GMV, análise de status codes e
-              identificação de anomalias, contribuindo para a melhoria contínua
-              do ecossistema de integrações. Mais de 300 agendas realizadas com
-              parceiros, garantindo a saúde das integrações e a qualidade dos
-              dados.
+              Atuação na implantação, sustentação e evolução de integrações de
+              parceiros no Marketplace, com foco em Groceries. Desenvolvimento
+              de dashboards, automações e análises via Databricks, apoiando a
+              migração de canais legados para APIs modernas, governança de
+              integrações e melhoria contínua da operação. Mais de 300 agendas
+              realizadas com parceiros e forte atuação como ponte entre
+              engenharia, negócio e operação.
             </p>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <h4>Engenheiro de Software</h4>
             <h5>BRQfoods | Dez 2022 - Ago 2023</h5>
             <p>
-              Atuação no desenvolvimento de APIs de microsserviços em C# para
-              tratar chamados do SAC, comunicando-se diretamente com o ERP
-              Protheus. Desenvolvimento de customizações em ADVPL para o
-              Protheus, sanando necessidades específicas de um cliente do setor
-              de laticínios. Criação e manutenção de pipelines de dados
-              utilizando SSIS (SQL Server Integration Services) para a
-              disponibilização de dados no Data Lake, viabilizando o consumo
-              analítico pelas ferramentas de Business Intelligence (BI) da
-              empresa.
+              Desenvolvimento de APIs de microsserviços em C# integradas ao ERP
+              Protheus, customizações em ADVPL e criação/manutenção de pipelines
+              SSIS para disponibilização de dados em Data Lake e consumo por BI.
             </p>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <h4>Engenheiro de Software</h4>
             <h5>DataPlus Sistemas | Fev 2021 - Nov 2022</h5>
             <p>
-              Manutenção e evolução do ERP proprietário da empresa, incluindo o
-              desenvolvimento de integrações fiscais essenciais (NFS-e, NF-e e
-              DIRF). Manutenção e criação de novas funcionalidades no ORM
-              próprio, com forte adoção de Reflection em VB.NET e paradigma de
-              Orientação a Objetos. Desenvolvimento e manutenção de um framework
-              para a geração automatizada de relatórios baseados em classes e
-              objetos, utilizando Crystal Reports. Criação de novas
-              funcionalidades e sustentação do aplicativo mobile de força de
-              vendas, totalmente integrado ao ERP, utilizando Xamarin.
+              Manutenção e evolução de ERP proprietário, integrações fiscais,
+              ORM interno com VB.NET e Reflection, geração automatizada de
+              relatórios com Crystal Reports e sustentação de aplicativo mobile
+              Xamarin.
             </p>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <h4>Analista de Negócios Sênior</h4>
             <h5>
               Fiorilli / Amendola & Amendola Software LTDA | Mar 2018 - Fev 2021
             </h5>
             <p>
               Suporte a sistemas de contabilidade pública e transparência,
-              realizando testes de complexidade, intervenções em bases de dados
-              e determinação de infraestrutura para aplicações.
+              testes de complexidade, intervenções em bases de dados e definição
+              de infraestrutura para aplicações.
             </p>
-          </div>
-          <div class="timeline-item">
-            <h4>Técnico Residente (Pleno e Júnior)</h4>
-            <h5>IT2B - Tecnologia | Fev 2013 - Mar 2018</h5>
+          </article>
+
+          <article class="timeline-item">
+            <h4>Técnico Residente</h4>
+            <h5>IT2B Tecnologia | Fev 2013 - Mar 2018</h5>
             <p>
               Atendimento aos funcionários do Tribunal de Justiça de SP,
-              solucionando problemas em microinformática ligados à
-              infraestrutura, redes, hardware e sistemas judiciais.
+              solucionando problemas de infraestrutura, redes, hardware,
+              microinformática e sistemas judiciais.
             </p>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <h4>Estagiário</h4>
             <h5>Tribunal de Justiça de SP | Jul 2009 - Jul 2010</h5>
             <p>
-              Auxílio nas atividades administrativas de ofício, pesquisas em
-              sistemas informatizados, movimentação processual e organização
-              documental.
+              Apoio em atividades administrativas, pesquisas em sistemas
+              informatizados, movimentação processual e organização documental.
             </p>
-          </div>
+          </article>
         </div>
       </section>
 
       <section class="experience slide-up" id="formacao">
-        <h3>
-          <i
-            class="fa-solid fa-graduation-cap"
-            style="color: var(--primary-color); margin-right: 10px"
-          ></i
-          >Formação Acadêmica
-        </h3>
+        <div class="section-heading">
+          <span class="section-kicker">Base acadêmica</span>
+          <h3>
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            Formação e certificações
+          </h3>
+        </div>
+
         <div class="timeline">
-          <div class="timeline-item">
+          <article class="timeline-item">
             <h4>
-              Pós-graduação Stricto Sensu em Ciência de Dados e Inteligência
-              Artificial
+              Pós-graduação em Ciência de Dados e Inteligência Artificial
             </h4>
             <h5>Anhanguera Educacional | Dez 2025 - Ago 2026</h5>
             <p>
-              Especialização voltada ao aprofundamento em arquitetura de dados,
-              modelagem preditiva e Inteligência Artificial.
+              Formação voltada a arquitetura de dados, modelagem preditiva e
+              Inteligência Artificial.
             </p>
-          </div>
-          <div class="timeline-item">
-            <h4>Pós-graduação Stricto Sensu em BI, Big Data e Analytics</h4>
+          </article>
+
+          <article class="timeline-item">
+            <h4>Pós-graduação em BI, Big Data e Analytics</h4>
             <h5>Anhanguera Educacional | Nov 2024 - Set 2025</h5>
             <p>
               Foco na estruturação de dados para tomada de decisão estratégica e
               inteligência de negócios.
             </p>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <h4>Bacharelado em Ciência da Computação</h4>
             <h5>Universidade Paulista (UNIP) | Jan 2021 - Dez 2024</h5>
             <p>
-              Formação sólida em engenharia de software, estrutura de dados e
-              algoritmos. <br /><br /><strong
-                >Trabalho de Conclusão de Curso:</strong
-              >
-              <i
-                >"Aplicação de regressão logística para detecção de carcinoma de
-                mama"</i
-              >. O estudo teve como objetivo desenvolver um modelo preditivo
-              baseado em Machine Learning e estatística voltado à área da saúde.
-              A partir da análise exploratória multivariada em uma base de 116
-              pacientes, a ferramenta identificou que a Idade, o Índice de Massa
-              Corporal (IMC), a Glicose e a Resistina configuram os principais
-              fatores de risco e biomarcadores eficientes. O modelo final
-              alcançou excelente desempenho, com precisão de 78,7% e uma Área
-              Sob a Curva ROC (AUC) de 87,1%.
+              Formação sólida em engenharia de software, estruturas de dados,
+              algoritmos, estatística aplicada e fundamentos de Machine
+              Learning.
+              <br /><br />
+              <strong>Trabalho de Conclusão de Curso:</strong>
+              <i>"Detecção de Câncer de Mama usando Regressão Logística"</i>.
+              Projeto acadêmico desenvolvido em Python para classificar tumores
+              de mama como benignos ou malignos a partir do dataset Breast
+              Cancer Wisconsin Diagnostic. A solução utilizou características
+              dos núcleos celulares extraídas de imagens digitalizadas de
+              aspiração por agulha fina, com avaliação por acurácia, matriz de
+              confusão, precisão, recall e F1-score. O modelo alcançou 96% de
+              acurácia geral, com 98% de precisão e 93% de recall para a classe
+              maligna.
             </p>
-          </div>
-          <div class="timeline-item">
-            <h4>Pós-Graduação em Engenharia de Software</h4>
+          </article>
+
+          <article class="timeline-item">
+            <h4>Pós-graduação em Engenharia de Software</h4>
             <h5>Universidade Estácio de Sá | 2016 - 2017</h5>
             <p>
-              Especialização focada no ciclo de vida do desenvolvimento de
-              sistemas, engenharia de requisitos e qualidade de software.
+              Especialização focada em ciclo de vida de desenvolvimento,
+              requisitos e qualidade de software.
             </p>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <h4>Tecnólogo em Automação Industrial, Mecatrônica e Robótica</h4>
             <h5>Fatec Catanduva | 2011 - 2013</h5>
             <p>
-              Base fundamentada em engenharia de controle, sistemas embarcados e
-              automação de processos industriais.
+              Base em engenharia de controle, sistemas embarcados e automação de
+              processos industriais.
             </p>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <h4>Técnico em Mecatrônica</h4>
-            <h5>
-              IFSP - Instituto Federal de Educação, Ciência e Tecnologia de São
-              Paulo | 2011 - 2012
-            </h5>
+            <h5>IFSP | 2011 - 2012</h5>
             <p>
-              Formação técnica focada em automação, sistemas eletroeletrônicos e
+              Formação técnica em automação, sistemas eletroeletrônicos e
               robótica básica.
             </p>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <h4>Técnico em Informática</h4>
-            <h5>ETEC - Elias Nechar | 2009 - 2010</h5>
+            <h5>ETEC Elias Nechar | 2009 - 2010</h5>
             <p>
-              Base fundamental em lógica de programação, manutenção de hardware
-              e redes de computadores.
+              Base em lógica de programação, manutenção de hardware e redes de
+              computadores.
             </p>
-          </div>
+          </article>
+        </div>
+
+        <div class="project-grid certifications-grid">
+          <article class="project-card">
+            <h4>
+              <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+              Certificações
+            </h4>
+            <ul class="project-highlights">
+              <li>
+                <strong>CSCU:</strong> Certified Secure Computer User |
+                EC-Council.
+              </li>
+              <li>
+                <strong>NDE:</strong> Network Defense Essentials | EC-Council.
+              </li>
+              <li>
+                <strong>Dados:</strong> Resolução de Problemas e Tomada de
+                Decisão com Dados | Ventus Learning.
+              </li>
+              <li>
+                <strong>Infraestrutura:</strong> Fundamentos em Redes | IBSEC.
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h4>
+              <i class="fa-solid fa-language" aria-hidden="true"></i> Idiomas
+            </h4>
+            <ul class="project-highlights">
+              <li><strong>Português:</strong> Nativo.</li>
+              <li>
+                <strong>Inglês:</strong> Fluente não nativo, com comunicação
+                corporativa e documentação técnica.
+              </li>
+            </ul>
+          </article>
         </div>
       </section>
 
       <section class="content-creation slide-up" id="conteudo">
-        <h3>
-          <i
-            class="fa-solid fa-meteor"
-            style="color: var(--primary-color); margin-right: 10px"
-          ></i
-          >Exploração e Criação de Conteúdo
-        </h3>
-        <div class="project-card">
-          <div class="content-text content-wrapper">
-            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
-              Astronomia, Ufologia e IA Generativa
-            </h4>
+        <div class="section-heading">
+          <span class="section-kicker">Criatividade</span>
+          <h3>
+            <i class="fa-solid fa-meteor" aria-hidden="true"></i>
+            Experimentos criativos com IA generativa
+          </h3>
+        </div>
+
+        <article class="project-card content-card">
+          <div class="content-text">
+            <h4>Astronomia, ufologia e exploração visual</h4>
             <p>
-              Além do desenvolvimento de software, dedico tempo à pesquisa
-              independente sobre astronomia e ufologia. Utilizo ferramentas de
-              Inteligência Artificial Generativa para criar representações
-              visuais de fenômenos cósmicos e conceitos ufológicos, unindo
-              tecnologia de ponta com a exploração visual do desconhecido.
+              Além do desenvolvimento de software, exploro temas ligados a
+              astronomia, ufologia e fenômenos cósmicos por meio de ferramentas
+              de IA generativa, unindo curiosidade científica, criatividade
+              visual e tecnologia aplicada.
             </p>
           </div>
-          <div class="image-preview-wrapper">
+
+          <button
+            class="image-preview-wrapper"
+            type="button"
+            aria-label="Ampliar imagem do experimento visual"
+          >
             <img
               src="universo.png"
               alt="Representação artística do espaço e ufologia gerada por IA"
               class="content-image-preview"
+              loading="lazy"
+              decoding="async"
             />
-
-            <span class="zoom-indicator">🔍</span>
-          </div>
-        </div>
+            <span class="zoom-indicator" aria-hidden="true">🔍</span>
+          </button>
+        </article>
       </section>
     </main>
 
@@ -707,7 +872,21 @@
       <p>© 2026 Wellington Perez. Todos os direitos reservados.</p>
     </footer>
 
-    <div class="lightbox" id="lightbox">
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Imagem ampliada"
+      aria-hidden="true"
+    >
+      <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Fechar imagem ampliada"
+      >
+        ×
+      </button>
       <img src="" alt="Imagem ampliada" id="lightbox-img" />
     </div>
 
