@@ -1,22 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade - Pet Cuidados</title>
-</head>
-<body>
-  <main style="max-width: 800px; margin: 40px auto; padding: 0 20px; font-family: Arial, sans-serif; line-height: 1.6;">
-    <h1>Política de Privacidade - Pet Cuidados</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade - Pet Cuidados</title>
+    <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+          Arial, sans-serif;
+        line-height: 1.6;
+        color: #333333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 20px;
+      }
+      h1 {
+        color: #2c3e50;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+      }
+      h2 {
+        color: #2980b9;
+        margin-top: 35px;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      ul {
+        margin-bottom: 20px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      a {
+        color: #3498db;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .data-atualizacao {
+        font-style: italic;
+        color: #7f8c8d;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Política de Privacidade</h1>
 
-    <p><strong>Última atualização:</strong> 15 de junho de 2026</p>
+    <p class="data-atualizacao">Última atualização: 15 de junho de 2026</p>
 
     <p>
-      Esta Política de Privacidade descreve como o aplicativo Pet Cuidados coleta,
-      usa, armazena e protege dados dos usuários.
+      Esta Política de Privacidade descreve como o aplicativo Pet Cuidados
+      coleta, usa, armazena e protege dados dos usuários.
     </p>
 
-    <!-- restante da política aqui -->
-  </main>
-</body>
+    <h2>1. Informações Coletadas</h2>
+    <p>O Pet Cuidados pode coletar e armazenar:</p>
+    <ul>
+      <li>e-mail usado para criação e acesso à conta;</li>
+      <li>
+        dados cadastrados pelo usuário sobre pets, como nome, espécie, raça,
+        peso e foto;
+      </li>
+      <li>
+        dados cadastrados sobre cuidados, como tipo, título, descrição,
+        orientações, datas, horários e configuração de lembretes;
+      </li>
+      <li>identificador de usuário gerado pelo Firebase Authentication;</li>
+      <li>imagens selecionadas pelo usuário para foto dos pets.</li>
+    </ul>
+    <p>
+      O app não coleta localização, contatos, SMS, microfone, dados financeiros
+      ou dados de saúde humana.
+    </p>
+
+    <h2>2. Como os Dados São Usados</h2>
+    <p>Os dados são usados para:</p>
+    <ul>
+      <li>autenticar o usuário;</li>
+      <li>salvar e sincronizar pets e cuidados;</li>
+      <li>exibir informações cadastradas no app;</li>
+      <li>enviar lembretes locais de cuidados;</li>
+      <li>permitir recuperação de senha por e-mail;</li>
+      <li>armazenar fotos dos pets quando o usuário escolhe uma imagem.</li>
+    </ul>
+
+    <h2>3. Serviços de Terceiros</h2>
+    <p>O app usa serviços Firebase, fornecidos pelo Google:</p>
+    <ul>
+      <li>
+        Firebase Authentication, para login, cadastro e recuperação de senha;
+      </li>
+      <li>Cloud Firestore, para armazenar dados de pets e cuidados;</li>
+      <li>Firebase Storage, para armazenar fotos dos pets.</li>
+    </ul>
+    <p>
+      As práticas de privacidade do Google/Firebase podem ser consultadas em:<br />
+      <a
+        href="https://firebase.google.com/support/privacy"
+        target="_blank"
+        rel="noopener noreferrer"
+        >https://firebase.google.com/support/privacy</a
+      >
+    </p>
+
+    <h2>4. Compartilhamento de Dados</h2>
+    <p>O Pet Cuidados não vende dados pessoais.</p>
+    <p>
+      Os dados podem ser processados por provedores necessários para o
+      funcionamento do app, como Firebase/Google. Também podem ser divulgados
+      quando exigido por lei ou ordem de autoridade competente.
+    </p>
+
+    <h2>5. Segurança</h2>
+    <p>
+      O app usa os mecanismos de segurança do Firebase para autenticação,
+      armazenamento e tráfego de dados. As regras do Firebase Storage restringem
+      acesso aos arquivos do usuário autenticado.
+    </p>
+    <p>
+      As senhas não são armazenadas no app nem no Firestore. A autenticação por
+      senha é gerenciada pelo Firebase Authentication.
+    </p>
+
+    <h2>6. Retenção e Exclusão</h2>
+    <p>
+      Os dados permanecem armazenados enquanto a conta existir ou enquanto forem
+      necessários para oferecer as funcionalidades do app.
+    </p>
+    <p>
+      Para solicitar exclusão de conta e dados associados, o usuário deve entrar
+      em contato pelo canal indicado nesta política. Ao excluir uma conta, os
+      dados associados ao usuário devem ser removidos, salvo quando houver
+      obrigação legal de retenção.
+    </p>
+
+    <h2>7. Permissões do Dispositivo</h2>
+    <p>O app pode solicitar:</p>
+    <ul>
+      <li>acesso à galeria/fotos, para selecionar foto do pet;</li>
+      <li>permissão de notificações, para enviar lembretes locais;</li>
+      <li>
+        permissão de alarmes exatos no Android, quando disponível, para melhorar
+        a precisão dos lembretes.
+      </li>
+    </ul>
+    <p>As permissões são usadas apenas para as funcionalidades informadas.</p>
+
+    <h2>8. Crianças</h2>
+    <p>
+      O app não é direcionado especificamente a crianças. Caso um responsável
+      identifique uso indevido de dados, deve entrar em contato para solicitar
+      remoção.
+    </p>
+
+    <h2>9. Alterações Nesta Política</h2>
+    <p>
+      Esta política pode ser atualizada para refletir mudanças no app, em
+      requisitos legais ou em serviços utilizados. A data de atualização será
+      alterada quando houver mudanças relevantes.
+    </p>
+
+    <h2>10. Contato</h2>
+    <p>Responsável: Wellington Desenvolvedor</p>
+    <p>
+      E-mail de contato:
+      <a href="mailto:apppetcuidados@gmail.com">apppetcuidados@gmail.com</a>
+    </p>
+  </body>
 </html>
